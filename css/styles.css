@@ -784,6 +784,104 @@ input[type="radio"].visually-hidden {
 	margin-right: 0;
 }
 
+
+.wrapper-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 46px;
+
+}
+
+.catalog-item-galery {
+  width: 460px;
+}
+
+.catalog-item-galery img {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.galery-mini {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.galery-mini img {
+  width: 140px;
+}
+
+.item-about {
+  width: 390px;
+  padding-top: 26px;
+}
+
+.item-article {
+  display: inline-block;
+  float: right;
+}
+
+.item-description {
+  margin-bottom: 40px;
+}
+
+.price {
+  display: inline-block;
+  padding: 10px 34px;
+  background-color: #e5e5e5;
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.item-about h3 {
+  margin-top: 68px;
+  font-size: 24px;
+
+}
+
+.include {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.include li {
+  position: relative;
+}
+
+.include li::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: -18px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+
+.wrapper-catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-form {
+  width: 175px;
+}
+
+.catalog-form h2 {
+  margin: 0 0 32px 0;
+}
+
+.form-list {
+  margin-bottom: 54px;
+}
+
 .modal {
 	position: fixed;
 
@@ -880,7 +978,7 @@ input[type="radio"].visually-hidden {
 .login-checkbox,
 .made-checkbox {
 	position: relative;
-
+  display: block;
 	padding-left: 30px;
 
 	cursor: pointer;
@@ -897,7 +995,7 @@ input[type="radio"].visually-hidden {
 .made-checkbox input[type="checkbox"] + .checkbox-indicator,
 .made-checkbox input[type="radio"] + .checkbox-indicator {
 	position: absolute;
-	top: 0;
+	top: 2px;
 	left: 0;
 
 	width: 17px;
@@ -943,6 +1041,133 @@ outline: 5px auto webkit-focus-ring-color;
 .made-checkbox input[type="radio"]:checked + .checkbox-indicator::before {
 	transform: rotate(45deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+.radio-button {
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+
+.made-checkbox input[type="radio"]:focus+.radio-button {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto webkit-focus-ring-color;
+}
+
+
+.made-checkbox input[type="radio"]:checked+.radio-button::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+
+
+
+
+
+
+.item-list {
+  padding: 0 0 46px 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  justify-content: space-between;
+  margin: 0;
+
+}
+
+.price-wrapper {
+  padding: 4px 20px 20px 20px;
+}
+
+.item-list-item {
+  width: 220px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(163, 120, 120, 0.2);
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.item-list-item .price-about {
+  color: #000;
+  text-transform: none;
+  font-size: 14px;
+
+}
+
+.item-list-item span {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.item-list-item .price {
+  display: inline-block;
+}
+
+.item-list-item .button {
+  display: inline-block;
+  margin: 0;
+}
+
+
+.list-number {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-number li {
+  display: inline-block;
+}
+
+.list-number-item {
+  display: inline-block;
+  width: 43px;
+  padding: 10px 0;
+  margin-right: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.list-number-item-cheked {
+  color: #000;
+  background-color: #fff;
+}
+
+.price-wrapper .button {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 
 .login-form .button {
 	width: 100%;
